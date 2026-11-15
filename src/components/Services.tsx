@@ -19,7 +19,7 @@ const CAPABILITIES_LIST = [
     items: ["Window Branding", "One Way Vision", "Inshop Vinyl & Sunboards", "Translites", "Counter Branding", "Wall Branding"],
   },
   {
-    category: "Events, Display & Promotional",
+    category: "Display & Promotional",
     items: ["Standees & Roll-ups", "Dropdowns & Cutouts", "Media Backdrops", "Location Pointers", "Flags & Pennants", "Exhibition Stalls"],
   },
 ];

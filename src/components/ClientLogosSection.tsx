@@ -11,23 +11,28 @@ export type ClientLogoBrand = {
 
 // All uploaded client logo files from public/images
 const BRAND_LOGOS: ClientLogoBrand[] = [
+  // ── Beverage & Refreshment Brands First ──
+  { name: "Bisleri", image: "/images/bisleri.jpg" },
   { name: "Coca-Cola", image: "/images/Coca-Cola_logo.svg.webp" },
+  { name: "Campa Cola", image: "/images/campa-cola.webp" },
+  { name: "Campa Sure Water", image: "/images/campa-sure.webp" },
+  { name: "Thums Up", image: "/images/thums-up.webp" },
+  { name: "Coolberg", image: "/images/collberg.jpg" },
+  { name: "Parag Milk Foods", image: "/images/parag.jpg" },
+  { name: "Anik", image: "/images/anik.jpg" },
+  { name: "Ananda", image: "/images/ananda.jpg" },
+
+  // ── Corporate, Electronics & FMCG Brands ──
   { name: "Philips", image: "/images/Philips-Logo.wine.png" },
-  { name: "Baidyanath", image: "/images/baidyanath.jpg" },
   { name: "Bajaj", image: "/images/Bajaj.jpg" },
   { name: "RSPL / RJPL", image: "/images/rjpl.png" },
-  { name: "Parag Milk Foods", image: "/images/parag.jpg" },
+  { name: "Prestige", image: "/images/prestige.png" },
   { name: "Dollar Industries", image: "/images/dollar.jpg" },
   { name: "Fena", image: "/images/fena.jpg" },
-  { name: "Ananda", image: "/images/ananda.jpg" },
   { name: "Kamdhenu", image: "/images/kamdhenu.jpg" },
-  { name: "Anik", image: "/images/anik.jpg" },
   { name: "Omron", image: "/images/omron.png" },
   { name: "Daenyx", image: "/images/daenyx.jpg" },
   { name: "GEM", image: "/images/gem.jpg" },
-  { name: "Coolberg", image: "/images/collberg.jpg" },
-  { name: "Bisleri", image: "/images/bisleri.jpg" },
-  { name: "Prestige", image: "/images/prestige.png" },
   { name: "Shalimar", image: "/images/shalimar.jpg" },
 ];
 
@@ -36,7 +41,7 @@ export default function ClientLogosSection() {
 
   const scroll = (direction: "left" | "right") => {
     if (sliderRef.current) {
-      const scrollAmount = direction === "left" ? -280 : 280;
+      const scrollAmount = direction === "left" ? -320 : 320;
       sliderRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -48,7 +53,7 @@ export default function ClientLogosSection() {
         if (scrollLeft >= scrollWidth - clientWidth - 10) {
           sliderRef.current.scrollTo({ left: 0, behavior: "smooth" });
         } else {
-          sliderRef.current.scrollBy({ left: 260, behavior: "smooth" });
+          sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
         }
       }
     }, 3200);
@@ -56,7 +61,7 @@ export default function ClientLogosSection() {
   }, []);
 
   return (
-    <section id="clients" className="bg-[#fcfcfc] py-7 sm:py-9 lg:py-11 border-y border-gray-200/80 select-none overflow-hidden">
+    <section id="clients" className="bg-[#fcfcfc] py-8 sm:py-10 lg:py-12 border-y border-gray-200/80 select-none overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0">
 
@@ -104,15 +109,15 @@ export default function ClientLogosSection() {
               {BRAND_LOGOS.map((brand, i) => (
                 <div
                   key={brand.name + i}
-                  className="flex items-center justify-center flex-shrink-0 px-6 sm:px-8 lg:px-10 py-2 group cursor-pointer border-r border-gray-300 last:border-r-0"
+                  className="flex items-center justify-center flex-shrink-0 px-6 sm:px-8 lg:px-10 py-3 group cursor-pointer border-r border-gray-300 last:border-r-0"
                 >
-                  <div className="relative h-12 sm:h-14 w-28 sm:w-32 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                  <div className="relative h-16 sm:h-20 lg:h-24 w-36 sm:w-44 lg:w-52 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                     <Image
                       src={brand.image}
                       alt={brand.name}
                       fill
-                      sizes="128px"
-                      className="object-contain filter grayscale contrast-125 opacity-75 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                      sizes="(max-width: 640px) 150px, (max-width: 1024px) 180px, 220px"
+                      className="object-contain filter grayscale contrast-115 opacity-85 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                     />
                   </div>
                 </div>

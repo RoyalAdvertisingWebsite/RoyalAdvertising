@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import WhoWeAre from "@/components/WhoWeAre";
 import Services from "@/components/Services";
+import MediaSupplySection from "@/components/MediaSupplySection";
 import Capabilities from "@/components/Capabilities";
 import Mission from "@/components/Mission";
 import ClientLogosSection from "@/components/ClientLogosSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <WhoWeAre />
         <Services />
+        <MediaSupplySection />
         <Capabilities />
         <Mission />
         <ClientLogosSection />

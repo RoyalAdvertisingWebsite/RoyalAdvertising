@@ -12,7 +12,7 @@ export default function Mission() {
           {/* ── LEFT: Real Mission Image ── */}
           <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group border border-gray-100 bg-[#e31e24]">
             <Image
-              src="/images/our mission.jpg"
+              src="/images/creative_sec.jpg"
               alt="Royal Advertising Our Mission"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
