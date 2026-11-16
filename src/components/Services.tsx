@@ -153,39 +153,50 @@ export default function Services() {
         </div>
 
         {/* ── MIDDLE: End-to-End Workflow Process (From User's Brief) ── */}
-        <div className="bg-[#0e1014] text-white rounded-[32px] p-8 sm:p-12 lg:p-16 mb-14 shadow-2xl border border-gray-800">
-          <div className="max-w-3xl mb-12">
-            <span className="text-[12px] font-bold text-[#e31e24] tracking-[0.28em] uppercase block mb-3">
-              Full Lifecycle Execution
-            </span>
-            <h3 className="text-[32px] sm:text-[40px] font-black tracking-tight leading-tight">
+        <div className="bg-[#0e1014] text-white rounded-[32px] p-8 sm:p-12 lg:p-16 mb-14 shadow-2xl border border-gray-800 relative overflow-hidden">
+          {/* Subtle Ambient Red Glow */}
+          <div className="absolute -top-32 -right-32 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="max-w-3xl mb-12 relative z-10">
+            {/* High-contrast Pill Badge */}
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 mb-4 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-[#ff3b42] shadow-[0_0_8px_#ff3b42]" />
+              <span className="text-[11px] font-bold text-[#ff4d52] tracking-[0.25em] uppercase">
+                Full Lifecycle Execution
+              </span>
+            </div>
+
+            <h3 className="text-[32px] sm:text-[40px] font-black tracking-tight leading-tight text-white">
               From Site Recce to Flawless Nationwide Installation.
             </h3>
-            <p className="text-gray-400 text-[15px] sm:text-[16px] mt-3">
+            <p className="text-gray-300 text-[15px] sm:text-[16px] mt-3 leading-relaxed">
               We specialize in interior and exterior branding, window branding, and remote branding for national brands.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative z-10">
             {WORKFLOW_STEPS.map((step) => {
               const Icon = step.icon;
               return (
                 <div
                   key={step.num}
-                  className="p-6 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#e31e24]/60 transition-all group"
+                  className="p-7 rounded-2xl bg-[#14161b] border border-white/10 hover:border-red-500/40 hover:bg-[#181a20] transition-all duration-300 group shadow-lg"
                 >
                   <div className="flex items-center justify-between mb-5">
-                    <span className="text-[28px] font-black text-[#e31e24] leading-none">
+                    {/* High-contrast vibrant step number */}
+                    <span className="text-[32px] font-black text-[#ff383f] leading-none">
                       {step.num}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-[#e31e24]/10 text-[#e31e24] flex items-center justify-center group-hover:bg-[#e31e24] group-hover:text-white transition-colors">
-                      <Icon size={20} />
+                    {/* Solid Red Badge with Bright White Icon for maximum clarity */}
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#e31e24] to-[#b81419] text-white flex items-center justify-center shadow-md shadow-red-900/40 group-hover:scale-110 group-hover:shadow-red-600/50 transition-all duration-300">
+                      <Icon size={20} strokeWidth={2.2} />
                     </div>
                   </div>
                   <h4 className="text-[18px] font-bold text-white mb-2 group-hover:text-red-100 transition-colors">
                     {step.title}
                   </h4>
-                  <p className="text-[13px] text-gray-400 leading-relaxed">
+                  <p className="text-[13.5px] text-gray-300/80 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

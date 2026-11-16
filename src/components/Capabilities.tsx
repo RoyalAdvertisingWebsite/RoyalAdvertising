@@ -46,9 +46,9 @@ export default function Capabilities() {
 
               {/* Eyebrow & Headline */}
               <div>
-                <div className="flex items-center gap-2.5 mb-4">
-                  <div className="w-6 h-[2.5px] bg-[#e31e24]" />
-                  <span className="text-[11px] font-bold tracking-[0.28em] text-[#e31e24] uppercase">
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 mb-4 backdrop-blur-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#ff3b42] shadow-[0_0_8px_#ff3b42]" />
+                  <span className="text-[11px] font-bold text-[#ff4d52] tracking-[0.25em] uppercase">
                     Our Capabilities
                   </span>
                 </div>

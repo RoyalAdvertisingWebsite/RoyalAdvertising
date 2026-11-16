@@ -111,20 +111,17 @@ export default function MediaSupplySection() {
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
 
-                {/* Subtle dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/75 transition-all duration-300" />
+                {/* Dark gradient for strong text legibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent group-hover:from-black/90 transition-all duration-300" />
 
                 {/* Eye Badge on hover */}
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/30 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md">
                   <Eye size={18} />
                 </div>
 
-                {/* Title badge */}
+                {/* Title overlay - enlarged white text without supply number */}
                 <div className="absolute bottom-4 left-5 right-5 z-10">
-                  <span className="text-[11px] font-bold tracking-widest text-[#e31e24] uppercase mb-1 block drop-shadow-sm">
-                    Supply {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="text-white font-bold text-[16px] leading-snug drop-shadow-md">
+                  <h3 className="text-white font-black text-[19px] sm:text-[21px] leading-tight drop-shadow-lg">
                     {item.title}
                   </h3>
                 </div>
