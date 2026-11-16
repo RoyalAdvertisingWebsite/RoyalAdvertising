@@ -1593,9 +1593,8 @@ export default function WorkPage() {
       <main className="pt-[68px] lg:pt-20 bg-white">
 
         {/* ── HERO BANNER ── */}
-        <section className="relative bg-[#0d0f12] text-white py-20 lg:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#e31e24_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/10 rounded-full blur-3xl pointer-events-none" />
+        <section className="relative bg-white text-gray-900 py-20 lg:py-28 overflow-hidden border-b border-gray-100">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
@@ -1606,12 +1605,12 @@ export default function WorkPage() {
                 </span>
               </div>
 
-              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6 text-gray-900">
                 OUR WORK. <br />
                 <span className="text-[#e31e24]">OUR PRIDE.</span>
               </h1>
 
-              <p className="text-gray-300 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
+              <p className="text-gray-600 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
                 Explore two decades of specialized outdoor media installations, retail branding, high-resolution printing, and exhibition architectures created for leading national brands.
               </p>
             </div>
@@ -1679,12 +1678,12 @@ export default function WorkPage() {
         </section>
 
         {/* ── BOTTOM CTA BANNER ── */}
-        <section className="bg-[#0b0c0e] text-white py-16 lg:py-20">
+        <section className="bg-white border-t border-gray-100 py-16 lg:py-20">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <h2 className="text-[34px] sm:text-[44px] font-black tracking-tight mb-5">
+            <h2 className="text-[34px] sm:text-[44px] font-black tracking-tight mb-5 text-gray-900">
               Ready to execute your next corporate campaign?
             </h2>
-            <p className="text-gray-400 text-[16px] sm:text-[17px] mb-8">
+            <p className="text-gray-500 text-[16px] sm:text-[17px] mb-8">
               From site recce to wide-format printing and nationwide mounting, we handle every detail with guaranteed quality.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -1696,7 +1695,7 @@ export default function WorkPage() {
               </Link>
               <a
                 href="tel:+911146252249"
-                className="border border-white/20 hover:border-white text-white font-bold px-8 py-4 rounded-full transition-all"
+                className="border border-gray-300 hover:border-gray-900 text-gray-900 font-bold px-8 py-4 rounded-full transition-all"
               >
                 Call: +91 11 4625 2249
               </a>

@@ -37,9 +37,8 @@ export default function ContactPage() {
       <main className="pt-[68px] lg:pt-20 bg-white">
 
         {/* ── HERO BANNER ── */}
-        <section className="relative bg-[#0d0f12] text-white py-20 lg:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#e31e24_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/10 rounded-full blur-3xl pointer-events-none" />
+        <section className="relative bg-white text-gray-900 py-20 lg:py-28 overflow-hidden border-b border-gray-100">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
@@ -50,12 +49,12 @@ export default function ContactPage() {
                 </span>
               </div>
 
-              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6 text-gray-900">
                 LET'S TALK <br />
                 <span className="text-[#e31e24]">ABOUT YOUR BRAND.</span>
               </h1>
 
-              <p className="text-gray-300 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
+              <p className="text-gray-600 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
                 Whether you need a full nationwide outdoor campaign, highway unipoles, retail store branding, or exhibition stall fabrication, our executive team is ready to connect.
               </p>
             </div>
@@ -239,18 +238,18 @@ export default function ContactPage() {
 
               {/* Right Side: Trust & Corporate Commitments */}
               <div className="space-y-8">
-                <div className="bg-[#0e1014] text-white rounded-[28px] p-8 sm:p-10 border border-gray-800">
+                <div className="bg-white rounded-[28px] p-8 sm:p-10 border border-gray-200 shadow-sm">
                   <span className="text-[11px] font-bold text-[#e31e24] tracking-widest uppercase block mb-2">
                     Why Royal Advertising
                   </span>
-                  <h3 className="text-2xl font-black mb-4">
+                  <h3 className="text-2xl font-black mb-4 text-gray-900">
                     Direct Plant Accountability. No Intermediaries.
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6">
                     Because we run our own 3,000 sq. ft. fabrication unit, StarFire solvent printers, and computerized 10 ft. laser routers, you get direct manufacturing rates and flawless execution.
                   </p>
 
-                  <ul className="space-y-3 text-sm font-semibold text-gray-200">
+                  <ul className="space-y-3 text-sm font-semibold text-gray-700">
                     <li className="flex items-center gap-2.5">
                       <CheckCircle2 size={18} className="text-[#e31e24]" />
                       <span>Dedicated Account Campaign Manager</span>
@@ -269,6 +268,7 @@ export default function ContactPage() {
                     </li>
                   </ul>
                 </div>
+              
 
                 {/* Direct quick call card */}
                 <div className="p-8 rounded-[28px] bg-red-50 border border-red-100 flex items-center justify-between gap-4">

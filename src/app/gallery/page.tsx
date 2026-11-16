@@ -1606,9 +1606,8 @@ export default function GalleryPage() {
 
       <main className="pt-[68px] lg:pt-20 bg-white">
         {/* ── HERO BANNER ─────────────────────────────────────────────────── */}
-        <section className="relative bg-[#0d0f12] text-white py-16 lg:py-24 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#e31e24_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/10 rounded-full blur-3xl pointer-events-none" />
+        <section className="relative bg-white text-gray-900 py-16 lg:py-24 overflow-hidden border-b border-gray-100">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
@@ -1619,25 +1618,25 @@ export default function GalleryPage() {
                 </span>
               </div>
 
-              <h1 className="text-[40px] sm:text-[52px] lg:text-[62px] font-black leading-[1.05] tracking-tight mb-5">
+              <h1 className="text-[40px] sm:text-[52px] lg:text-[62px] font-black leading-[1.05] tracking-tight mb-5 text-gray-900">
                 OUR PRODUCTION <br />
                 <span className="text-[#e31e24]">& INSTALLATION GALLERY.</span>
               </h1>
 
-              <p className="text-gray-300 text-[16px] sm:text-[18px] leading-relaxed font-normal max-w-2xl mb-8">
+              <p className="text-gray-600 text-[16px] sm:text-[18px] leading-relaxed font-normal max-w-2xl mb-8">
                 Explore real on-site photos of Main Boards, Inshop Boards, ACP Boards, Stalls, Standees, and Transit brandings crafted by Royal Advertising across India.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-gray-400">
-                <span className="flex items-center gap-1.5 text-white">
+              <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-gray-500">
+                <span className="flex items-center gap-1.5 text-gray-900">
                   <CheckCircle2 size={15} className="text-[#e31e24]" /> 3,000+ Sq. Ft. Plant
                 </span>
                 <span>•</span>
-                <span className="flex items-center gap-1.5 text-white">
+                <span className="flex items-center gap-1.5 text-gray-900">
                   <CheckCircle2 size={15} className="text-[#e31e24]" /> Pan-India Installation
                 </span>
                 <span>•</span>
-                <span className="flex items-center gap-1.5 text-white">
+                <span className="flex items-center gap-1.5 text-gray-900">
                   <CheckCircle2 size={15} className="text-[#e31e24]" /> 20+ Years Experience
                 </span>
               </div>

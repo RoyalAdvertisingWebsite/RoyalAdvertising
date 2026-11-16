@@ -148,7 +148,7 @@ export default function ServicesPage() {
       <main className="bg-white pt-20">
 
         {/* ── HERO ─────────────────────────────────────────────────────────── */}
-        <section className="relative bg-[#0d0e10] overflow-hidden py-24 lg:py-32">
+        <section className="relative bg-white overflow-hidden py-24 lg:py-32 border-b border-gray-100">
           {/* Background image with overlay */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -156,10 +156,10 @@ export default function ServicesPage() {
               alt="Royal Advertising production facility"
               fill
               sizes="100vw"
-              className="object-cover object-center opacity-25"
+              className="object-cover object-center opacity-10"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0d0e10] via-[#0d0e10]/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/50" />
           </div>
 
           <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,14 +170,14 @@ export default function ServicesPage() {
                   Our Services
                 </span>
               </div>
-              <h1 className="font-black text-white text-[42px] sm:text-[56px] lg:text-[70px] leading-[1.0] tracking-tight mb-6">
+              <h1 className="font-black text-gray-900 text-[42px] sm:text-[56px] lg:text-[70px] leading-[1.0] tracking-tight mb-6">
                 Complete{" "}
                 <span className="text-[#e31e24]">Branding &</span>
                 <br />
                 Advertising{" "}
                 <span className="text-[#e31e24]">Solutions.</span>
               </h1>
-              <p className="text-gray-300 text-[17px] lg:text-[18px] leading-relaxed max-w-2xl mb-10">
+              <p className="text-gray-600 text-[17px] lg:text-[18px] leading-relaxed max-w-2xl mb-10">
                 From ACP boards and glow signs to 3D letters, flex banners, standees, exhibition stalls and large-format printing — Royal Advertising delivers every branding need under one roof with 20+ years of expertise.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -190,7 +190,7 @@ export default function ServicesPage() {
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-[15px] px-8 py-4 rounded-full transition-all backdrop-blur-sm"
+                  className="inline-flex items-center gap-3 bg-gray-100 hover:bg-gray-200 border border-gray-200 text-gray-900 font-bold text-[15px] px-8 py-4 rounded-full transition-all"
                 >
                   Contact Us
                 </a>
@@ -204,12 +204,12 @@ export default function ServicesPage() {
               {WHY_ROYAL.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl px-6 py-5 text-center"
+                  className="bg-gray-50 border border-gray-200 rounded-2xl px-6 py-5 text-center"
                 >
-                  <p className="text-[32px] sm:text-[36px] font-black text-white leading-none mb-1">
+                  <p className="text-[32px] sm:text-[36px] font-black text-gray-900 leading-none mb-1">
                     {stat.label}
                   </p>
-                  <p className="text-[13px] text-gray-400 font-medium">{stat.sub}</p>
+                  <p className="text-[13px] text-gray-500 font-medium">{stat.sub}</p>
                 </div>
               ))}
             </div>
@@ -301,7 +301,7 @@ export default function ServicesPage() {
         </section>
 
         {/* ── FULL PRODUCTS CATALOG ─────────────────────────────────────────── */}
-        <section className="bg-[#0d0e10] py-20 lg:py-28">
+        <section className="bg-white py-20 lg:py-28 border-t border-gray-100">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-14">
               <div className="flex items-center justify-center gap-3 mb-4">
@@ -311,11 +311,11 @@ export default function ServicesPage() {
                 </span>
                 <div className="w-8 h-[2.5px] bg-[#e31e24]" />
               </div>
-              <h2 className="text-[32px] sm:text-[40px] font-black text-white tracking-tight mb-4">
+              <h2 className="text-[32px] sm:text-[40px] font-black text-gray-900 tracking-tight mb-4">
                 Everything We{" "}
                 <span className="text-[#e31e24]">Manufacture & Install</span>
               </h2>
-              <p className="text-gray-400 text-[15px] leading-relaxed">
+              <p className="text-gray-500 text-[15px] leading-relaxed">
                 Our in-house 3,000 sq. ft. fabrication unit produces the full range of branding materials — no outsourcing, no delays.
               </p>
             </div>
@@ -351,9 +351,9 @@ export default function ServicesPage() {
               ].map((product) => (
                 <div
                   key={product}
-                  className="bg-white/[0.05] border border-white/10 rounded-xl px-4 py-3.5 text-center hover:bg-[#e31e24]/10 hover:border-[#e31e24]/40 transition-all group"
+                  className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 text-center hover:bg-[#e31e24]/10 hover:border-[#e31e24]/40 transition-all group"
                 >
-                  <span className="text-[13px] font-semibold text-gray-300 group-hover:text-white transition-colors">
+                  <span className="text-[13px] font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">
                     {product}
                   </span>
                 </div>

@@ -153,24 +153,21 @@ export default function Services() {
         </div>
 
         {/* ── MIDDLE: End-to-End Workflow Process (From User's Brief) ── */}
-        <div className="bg-[#0e1014] text-white rounded-[32px] p-8 sm:p-12 lg:p-16 mb-14 shadow-2xl border border-gray-800 relative overflow-hidden">
-          {/* Subtle Ambient Red Glow */}
-          <div className="absolute -top-32 -right-32 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="bg-white rounded-[32px] p-8 sm:p-12 lg:p-16 mb-14 shadow-sm border border-gray-200 relative overflow-hidden">
 
           <div className="max-w-3xl mb-12 relative z-10">
-            {/* High-contrast Pill Badge */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 mb-4 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-[#ff3b42] shadow-[0_0_8px_#ff3b42]" />
-              <span className="text-[11px] font-bold text-[#ff4d52] tracking-[0.25em] uppercase">
+            {/* Pill Badge */}
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 mb-4">
+              <span className="w-2 h-2 rounded-full bg-[#e31e24]" />
+              <span className="text-[11px] font-bold text-[#e31e24] tracking-[0.25em] uppercase">
                 Full Lifecycle Execution
               </span>
             </div>
 
-            <h3 className="text-[32px] sm:text-[40px] font-black tracking-tight leading-tight text-white">
+            <h3 className="text-[32px] sm:text-[40px] font-black tracking-tight leading-tight text-gray-900">
               From Site Recce to Flawless Nationwide Installation.
             </h3>
-            <p className="text-gray-300 text-[15px] sm:text-[16px] mt-3 leading-relaxed">
+            <p className="text-gray-500 text-[15px] sm:text-[16px] mt-3 leading-relaxed">
               We specialize in interior and exterior branding, window branding, and remote branding for national brands.
             </p>
           </div>
@@ -181,22 +178,20 @@ export default function Services() {
               return (
                 <div
                   key={step.num}
-                  className="p-7 rounded-2xl bg-[#14161b] border border-white/10 hover:border-red-500/40 hover:bg-[#181a20] transition-all duration-300 group shadow-lg"
+                  className="p-7 rounded-2xl bg-gray-50 border border-gray-200 hover:border-[#e31e24]/40 hover:bg-red-50/30 transition-all duration-300 group shadow-sm"
                 >
                   <div className="flex items-center justify-between mb-5">
-                    {/* High-contrast vibrant step number */}
-                    <span className="text-[32px] font-black text-[#ff383f] leading-none">
+                    <span className="text-[32px] font-black text-[#e31e24] leading-none">
                       {step.num}
                     </span>
-                    {/* Solid Red Badge with Bright White Icon for maximum clarity */}
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#e31e24] to-[#b81419] text-white flex items-center justify-center shadow-md shadow-red-900/40 group-hover:scale-110 group-hover:shadow-red-600/50 transition-all duration-300">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#e31e24] to-[#b81419] text-white flex items-center justify-center shadow-md shadow-red-500/20 group-hover:scale-110 transition-all duration-300">
                       <Icon size={20} strokeWidth={2.2} />
                     </div>
                   </div>
-                  <h4 className="text-[18px] font-bold text-white mb-2 group-hover:text-red-100 transition-colors">
+                  <h4 className="text-[18px] font-bold text-gray-900 mb-2">
                     {step.title}
                   </h4>
-                  <p className="text-[13.5px] text-gray-300/80 leading-relaxed">
+                  <p className="text-[13.5px] text-gray-500 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

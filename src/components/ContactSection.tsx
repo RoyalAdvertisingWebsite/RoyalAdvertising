@@ -27,13 +27,13 @@ export default function ContactSection() {
     <section id="contact" className="bg-white py-12 lg:py-16 relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Outer dark container */}
-        <div className="relative rounded-[32px] overflow-hidden bg-[#121418] shadow-2xl border border-gray-800">
+        {/* Outer container — white bg */}
+        <div className="relative rounded-[32px] overflow-hidden bg-white shadow-sm border border-gray-200">
 
           <div className="grid lg:grid-cols-[0.85fr_1.5fr] items-stretch min-h-[560px]">
 
-            {/* ── LEFT: Dark Visual Banner ── */}
-            <div className="relative h-full p-8 sm:p-12 lg:p-14 flex flex-col justify-between z-10">
+            {/* ── LEFT: Light Visual Banner ── */}
+            <div className="relative h-full p-8 sm:p-12 lg:p-14 flex flex-col justify-between z-10 bg-gray-50 border-r border-gray-200">
 
               <div>
                 <div className="flex items-center gap-3 mb-6">
@@ -43,15 +43,15 @@ export default function ContactSection() {
                   </span>
                 </div>
 
-                <h2 className="text-white font-black text-[36px] sm:text-[44px] lg:text-[50px] leading-[1.05] tracking-tight mb-5">
+                <h2 className="text-gray-900 font-black text-[36px] sm:text-[44px] lg:text-[50px] leading-[1.05] tracking-tight mb-5">
                   LET&apos;S BRING
                   <br />
                   YOUR IDEAS
                   <br />
-                  <span className="text-white">TO LIFE.</span>
+                  <span className="text-[#e31e24]">TO LIFE.</span>
                 </h2>
 
-                <p className="text-gray-300 text-[15px] lg:text-[16px] leading-relaxed max-w-[360px] mb-8">
+                <p className="text-gray-600 text-[15px] lg:text-[16px] leading-relaxed max-w-[360px] mb-8">
                   Have a project in mind? Get in touch with us today.
                 </p>
 
@@ -65,7 +65,7 @@ export default function ContactSection() {
                 </a>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-gray-800/80 flex flex-wrap gap-x-4 gap-y-1 text-gray-500 text-xs font-semibold">
+              <div className="mt-8 pt-6 border-t border-gray-200 flex flex-wrap gap-x-4 gap-y-1 text-gray-500 text-xs font-semibold">
                 <span>Pan-India Presence</span>
                 <span>•</span>
                 <span>24/7 Client Support</span>

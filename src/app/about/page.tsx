@@ -67,9 +67,8 @@ export default function AboutPage() {
       <main className="pt-[68px] lg:pt-20 bg-white">
         
         {/* ── HERO BANNER ── */}
-        <section className="relative bg-[#0d0f12] text-white py-20 lg:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#e31e24_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/10 rounded-full blur-3xl pointer-events-none" />
+        <section className="relative bg-white text-gray-900 py-20 lg:py-28 overflow-hidden border-b border-gray-100">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#e31e24]/5 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
@@ -80,13 +79,13 @@ export default function AboutPage() {
                 </span>
               </div>
 
-              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6">
+              <h1 className="text-[42px] sm:text-[54px] lg:text-[64px] font-black leading-[1.05] tracking-tight mb-6 text-gray-900">
                 MAKING BRANDS <br />
                 <span className="text-[#e31e24]">IMPOSSIBLE TO IGNORE</span> <br />
                 FOR OVER 20 YEARS.
               </h1>
 
-              <p className="text-gray-300 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
+              <p className="text-gray-600 text-[17px] sm:text-[19px] leading-relaxed font-normal max-w-2xl">
                 ROYAL ADVERTISING is one of the fastest growing Corporate & Marketing Advertising Agencies of Northern India, delivering impactful outdoor campaigns across India.
               </p>
             </div>
