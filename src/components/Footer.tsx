@@ -112,7 +112,7 @@ export default function Footer() {
               {/* Location */}
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin size={16} className="text-[#e31e24] flex-shrink-0 mt-0.5" />
-                <span>Northern India & Corporate Hubs Pan-India</span>
+                <span>BUILDING NO, B-75, GROUND FLOOR, OKHLA INDUSTRIAL AREA, PHASE-II, NEW DELHI-20</span>
               </div>
             </div>
           </div>

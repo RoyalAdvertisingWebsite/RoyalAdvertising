@@ -115,12 +115,9 @@ export default function ContactPage() {
                 <span className="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">
                   Plant & Operations Hubs
                 </span>
-                <div className="text-[18px] font-black text-gray-900 leading-tight">
-                  Northern India & Mumbai
+                <div className="text-[17px] font-black text-gray-900 leading-snug">
+                  BUILDING NO, B-75, GROUND FLOOR, OKHLA INDUSTRIAL AREA, PHASE-II, NEW DELHI-20
                 </div>
-                <p className="text-xs text-gray-500 mt-2">
-                  Operating across Delhi, Haryana, Rajasthan, U.P., M.P., Bihar, Maharashtra, Karnataka & Pan-India.
-                </p>
               </div>
 
             </div>
@@ -268,7 +265,7 @@ export default function ContactPage() {
                     </li>
                   </ul>
                 </div>
-              
+
 
                 {/* Direct quick call card */}
                 <div className="p-8 rounded-[28px] bg-red-50 border border-red-100 flex items-center justify-between gap-4">

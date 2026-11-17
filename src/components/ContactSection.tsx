@@ -136,44 +136,45 @@ export default function ContactSection() {
                 )}
 
                 {/* Contact info row below form */}
-                <div className="mt-7 pt-6 border-t border-gray-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div className="mt-7 pt-6 border-t border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
                   <a
                     href="tel:+911146252249"
-                    className="flex items-center gap-3 text-gray-700 hover:text-[#e31e24] transition-colors group flex-shrink-0"
+                    className="flex items-start gap-3 text-gray-700 hover:text-[#e31e24] transition-colors group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0 group-hover:bg-[#e31e24] group-hover:text-white transition-all">
+                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0 group-hover:bg-[#e31e24] group-hover:text-white transition-all mt-0.5">
                       <Phone size={17} />
                     </div>
                     <div>
                       <p className="text-[11px] text-gray-400 font-medium">Direct Line</p>
-                      <p className="text-[14px] font-black text-gray-900 group-hover:text-[#e31e24] leading-tight whitespace-nowrap">+91 11 4625 2249</p>
-                      <p className="text-[12px] font-semibold text-gray-500 leading-tight whitespace-nowrap">+91 93152 38601</p>
+                      <p className="text-[14px] font-black text-gray-900 group-hover:text-[#e31e24] leading-tight">+91 11 4625 2249</p>
+                      <p className="text-[12px] font-semibold text-gray-500 leading-tight mt-0.5">+91 93152 38601</p>
                     </div>
                   </a>
 
                   <a
                     href="mailto:royaladvertising786@gmail.com"
-                    className="flex items-center gap-3 text-gray-700 hover:text-[#e31e24] transition-colors group flex-shrink-0"
+                    className="flex items-start gap-3 text-gray-700 hover:text-[#e31e24] transition-colors group"
                   >
-                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0 group-hover:bg-[#e31e24] group-hover:text-white transition-all">
+                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0 group-hover:bg-[#e31e24] group-hover:text-white transition-all mt-0.5">
                       <Mail size={17} />
                     </div>
                     <div>
                       <p className="text-[11px] text-gray-400 font-medium">Email us</p>
-                      <p className="text-[13px] sm:text-[14px] font-bold leading-tight whitespace-nowrap">
+                      <p className="text-[13px] sm:text-[14px] font-bold leading-tight break-all">
                         royaladvertising786@gmail.com
                       </p>
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-3 text-gray-700 flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0">
+                  <div className="flex items-start gap-3 text-gray-700">
+                    <div className="w-10 h-10 rounded-full bg-red-50 text-[#e31e24] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <MapPin size={17} />
                     </div>
                     <div>
                       <p className="text-[11px] text-gray-400 font-medium">Location</p>
-                      <p className="text-[13px] sm:text-[14px] font-bold leading-tight whitespace-nowrap">Northern India</p>
-                      <p className="text-[12px] text-gray-500 leading-tight whitespace-nowrap">Pan-India Network</p>
+                      <p className="text-[12px] sm:text-[13px] font-bold leading-snug text-gray-900">
+                        BUILDING NO, B-75, GROUND FLOOR, OKHLA INDUSTRIAL AREA, PHASE-II, NEW DELHI-20
+                      </p>
                     </div>
                   </div>
                 </div>

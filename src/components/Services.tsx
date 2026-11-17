@@ -90,59 +90,81 @@ export default function Services() {
             </Link>
           </div>
 
-          {/* RIGHT: Responsive 5 Image Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 auto-rows-fr sm:auto-rows-[230px] lg:auto-rows-[240px]">
+          {/* RIGHT: Responsive 7 Image Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 auto-rows-fr sm:auto-rows-[220px] lg:auto-rows-[230px]">
 
-            {/* 01. Outdoor Advertising */}
-            <div className="h-[230px] sm:h-full">
+            {/* 01. Outdoor Boards */}
+            <div className="h-[220px] sm:h-full">
               <ServiceCard
                 num=""
-                title="Outdoor Boards"
-                imageSrc="/gallery/outdoor-boards.jpg"
+                title=""
+                imageSrc="/images/our_services/18bcec35-a039-47fb-acc8-1b3b80bfc5d5.jpg"
                 href="/services#outdoor-advertising"
                 active={false}
               />
             </div>
 
-            {/* 05. Printing Solutions */}
-            <div className="h-[230px] sm:h-full">
+            {/* 02. Printing Solutions */}
+            <div className="h-[220px] sm:h-full">
               <ServiceCard
                 num=""
-                title="Printing Solutions"
-                imageSrc="/gallery/home-gallery3.jpeg"
+                title=""
+                imageSrc="/images/our_services/3c75f7d4-e10c-40f8-90a1-32c1be18cf1d.jpg"
                 href="/services#printing-solutions"
                 active={true}
               />
             </div>
 
-            {/* 06. Exhibition Solutions */}
-            <div className="h-[260px] sm:h-[230px] lg:h-full sm:col-span-2 lg:col-span-1 lg:row-span-2">
+            {/* 03. Standees & Displays (Span 2 rows for balanced height) */}
+            <div className="h-[250px] sm:h-[220px] lg:h-full sm:col-span-2 lg:col-span-1 lg:row-span-2">
               <ServiceCard
                 num=""
-                title="STANDEES"
-                imageSrc="/gallery/standees.jpg"
+                title=""
+                imageSrc="/images/our_services/f45b90ea-5e83-4cb0-9010-b217486f2216.jpg"
                 href="/services#exhibition-events"
                 tall
               />
             </div>
 
-            {/* 03. Signage & Display */}
-            <div className="h-[230px] sm:h-full">
+            {/* 04. Inshop Brandings */}
+            <div className="h-[220px] sm:h-full">
               <ServiceCard
                 num=""
-                title="Inshop Brandings"
-                imageSrc="/gallery/inshop-branding.jpg"
+                title=""
+                imageSrc="/images/our_services/860a4ddb-0a22-44d8-81a5-4ac1758eec89.jpg"
                 href="/services#boards-signage"
                 active={false}
               />
             </div>
 
-            {/* 04. Branding & Identity */}
-            <div className="h-[230px] sm:h-full">
+            {/* 05. Main Boards */}
+            <div className="h-[220px] sm:h-full">
               <ServiceCard
                 num=""
-                title="Main Boards"
-                imageSrc="/gallery/main-boards.jpg"
+                title=""
+                imageSrc="/images/our_services/95daf87c-cda3-45dc-8ad6-3122a3ffc422.jpg"
+                href="/services#retail-inshop"
+                active={false}
+              />
+            </div>
+
+            {/* 06. ACP & Facade Boards */}
+            <div className="h-[220px] sm:h-full">
+              <ServiceCard
+                num=""
+                title=""
+                imageSrc="/images/our_services/b16ba34a-71fd-4746-8264-2fb53d182975.jpg"
+                href="/services#boards-signage"
+                active={false}
+              />
+            </div>
+
+            {/* 07. Corporate Branding */}
+            <div className="h-[220px] sm:h-full sm:col-span-2 lg:col-span-2">
+              <ServiceCard
+                num=""
+                title=""
+                imageSrc="/images/our_services/e011eae5-bc21-4292-b9b5-f1e65874f88d.jpg"
                 href="/services#retail-inshop"
                 active={false}
               />
